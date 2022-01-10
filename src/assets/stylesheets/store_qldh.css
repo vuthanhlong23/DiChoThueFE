@@ -1,0 +1,136 @@
+.container {
+    margin-top: 200px;
+    position: relative;
+    height: 500px;
+}
+
+.btn-dark{
+    color: white;
+    height: 50px;
+}
+
+.dichothue-store_qldh__design-description {
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dichothue-store_qldh__design-heading {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.store_qldh_booking_history_info {
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.store_qldh_booking_history_product {
+    padding: 0 40px;
+}
+
+.store_qldh_booking_history-item {
+    font-weight: 400;
+}
+
+.store_qldh_booking_history_info-items {
+    border-top: 2px solid #ccc;
+    margin: 10px 0;
+    padding: 5px 0;
+}
+
+.store_qldh_booking_history-item_cancel_btn {
+    color: white;
+
+}
+
+.store_qldh_booking_history-item_id_order {
+    text-decoration: none;
+}
+
+
+.store_qldh_id_order {
+    font-size: 1.4rem;
+    margin-left: 2px;
+}
+
+.store_qldh_order_details_store_name {
+    font-size: 1.4rem;
+    margin-left: 2px;
+    margin-bottom: 20px;
+}
+
+.store_qldh_booking_order-item {
+    font-weight: 400;
+    border-top: 2px solid #ccc;
+    margin: 10px 0;
+    padding: 5px 0 5px 10px;
+
+}
+
+
+.wrap__store_qldh_order-body-right {
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+
+.store_qldh_order-body__summary-title {
+    font-size: 2rem;
+    font-weight: 500;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+.store_qldh_order-body__total {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 0 30px;
+    height: 30px;
+    border-bottom: 2px solid #ccc;
+}
+
+.store_qldh_order-body__total-price-text-default {
+    font-size: 1.8rem;
+    font-weight: 500;
+}   
+
+.store_qldh_order_body__total-price {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.store_qldh_order-body__check-out-btn {
+    margin: 20px 30px;
+    width: 306px;
+}
+
+.store_qldh_order-body__check-out-btn:hover {
+    background-color: var(--second-primary-color) !important;
+}
+
+.store_qldh_order_body__total-price_all {
+    color: red;
+    font-size: 2.2rem;
+    
+}
+
+.store_qldh_confirm_btn {
+    color: white;
+} 
+
+.store_qldh_cancel_btn {
+    color: white;
+    margin-left: 5px;
+
+}
+
+.store_qldh_two_button_wrap {
+    padding-top: 40px;
+    padding-left: 30px;
+}

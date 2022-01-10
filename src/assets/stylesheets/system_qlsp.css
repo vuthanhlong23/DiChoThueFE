@@ -1,0 +1,60 @@
+
+.system_dichothue-item {
+    display: block;
+    text-decoration: none;
+    background-color: var(--white-color);
+    margin-top: 40px;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 3px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1s;
+    will-change: tranform;
+
+    width: 180px;
+    height: 320px;
+}
+
+.system_dichothue-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+
+}
+
+.system_dichothue-item__img {
+    min-width: 180px;
+    min-height: 180px;
+    max-width: 180px;
+    max-height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+
+.system_dichothue-item_info {
+    display: flex;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: black;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.system_addcart_btn{
+    display: flex;
+    margin: auto;
+    background-color: #888;
+    margin-top: 10px;
+    color: white;
+}
+
+
+.cart_heading_store_name {
+    font-size: 1.4rem;
+}
+
+.cart_heading_store_address {
+    font-size: 1.4rem;
+}

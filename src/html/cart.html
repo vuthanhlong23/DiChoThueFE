@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../stylesheets/base.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+ 
+    <link rel="stylesheet" href="../stylesheets/header.css">
+    <link rel="stylesheet" href="../stylesheets/cart.css">
+
+</head>
+
+
+<body>
+    
+    <div class="app">
+        <header class="customer_header_1">
+            <div class="grid">
+
+                <div class="header_desktop_customer_1">
+                    <div class="header_desktop_customer_1-logo">
+                        <a href="#">
+                            <img class="logo-Dichothue" src="./../res/logo/logo.png" alt=""> 
+                        </a>
+                    </div>
+
+                    <form class="header_desktop_customer_1__search d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                        <button type="submit" class="btn btn-dark">Tìm kiếm</button>
+                    </form>
+
+                    <a href="#" class="header_desktop_customer_1__cart">
+                        <i class="header_desktop_customer_1__cart-icon fas fa-shopping-cart"></i>
+                    </a>
+
+                    <div class="header_desktop_customer_1__account">
+                        <i class="header_desktop_customer_1__account-icon fas fa-user-alt"></i>
+                        <ul class="header_desktop_customer_1__account-option">
+                            <li><a href="#" class="header_desktop_customer_1__account-item">Tài khoản của tôi</a></li>
+                            <li><a href="#" class="header_desktop_customer_1__account-item">Đơn mua</a></li>
+                            <li><a href="#" class="header_desktop_customer_1__account-item">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <header class="customer_header_2">
+            <div class="grid">
+                <div class="header_desktop_customer_2">
+                    <nav class="header_desktop_customer_2__navbar">
+                        <ul class="header_desktop_customer_2__navbar-list">
+                            <li class="header_desktop_customer_2__navbar-item"> <a href="#">TRANG CHỦ</a></li>
+                            <li class="header_desktop_customer_2__navbar-item"><a href="#">HỆ THỐNG CỬA HÀNG</a></li>
+                            <li class="header_desktop_customer_2__navbar-item"><a href="#">CÂU HỎI THƯỜNG GẶP</a></li>
+                            <li class="header_desktop_customer_2__navbar-item"><a href="#">LIÊN HỆ</a></li>
+                        </ul>   
+                    </nav>
+                </div>
+        </header>
+
+
+        <div class="container">
+            <div class="grid">
+                <div class="row">
+                    <div class="col-2">
+                        <span class="cart_heading_name">GIỎ HÀNG</span>
+                    </div>
+                    <div class="col-3">
+                        <span class="cart_heading_store_name">Coop Food chi nhánh 2</span>
+                    </div>
+                    <div class="col-6">
+                        <span class="cart_heading_store_address">(148 Nguyễn Xí, phường 13, quận Bình Thạnh, tpHCM)</span>
+                    </div>
+                </div>
+
+                <div class="row align-items-start customer_cart_info">
+                    <div class="col-4">
+                        Sản phẩm
+                    </div>
+                    <div class="col-2">
+                        Đơn giá
+                    </div>
+                    <div class="col-2">
+                        Số lượng
+                    </div>
+                    <div class="col-1">
+                        Đơn vị tính 
+                    </div>
+                    <div class="col-2">
+                        Số tiền
+                    </div>
+                    <div class="col-1">
+                        Thao tác
+                    </div>
+                </div>
+
+                <div class="row align-items-start customer_cart_info">
+                    <div class="col-4">
+                        <div class="cart-body-item">
+                            <img src="../res/product/chao-khoai-mon-cho-be-7832_500x500.jpeg" class="cart-body-item__service-img">
+                            <div class="cart-body-item__content">
+                                <span class="cart-body-item__service-name">Khoai môn</span>
+                                <div class="cart-body-item__service-details">
+                                    <div class="cart-body-item__category-text-default">Phân loại: &nbsp</div>
+                                    <div class="cart-body-item__category-description">Rau củ quả</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="cart-body-item__service-element">40.000đ</div>
+                    </div>
+                    <div class="col-2">
+                        <div class="cart-body-item__service-element">
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                        </div>
+                    </div>
+                    <div class="col-1">
+                        <div class="cart-body-item__service-element">lạng</div>
+                    </div>
+                    <div class="col-2">
+                        <div class="cart-body-item__service-element">40.000đ</div>
+                    </div>
+                    <div class="col-1">
+                        <div class="cart-body-item__remove"><i class="cart-body-item__remove-icon far fa-trash-alt"></i></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-4">
+                        <div class="wrap__cart-body-right">
+                            <span class="cart-body__summary-title">Tổng kết đơn hàng</span>
+                            <div class="cart-body__total">
+                                <div class="cart-body__total-price-text-default">Tổng cộng</div>
+                                <div class="cart_body__total-price">$9.00</div>
+                            </div>
+                            <a href="#" class="cart-body__check-out-btn btn btn--primary">TIẾN HÀNH THANH TOÁN</a>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

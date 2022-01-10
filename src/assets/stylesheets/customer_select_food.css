@@ -1,0 +1,109 @@
+.container {
+    margin-top: 200px;
+    position: relative;
+    height: 500px;
+}
+
+.btn-dark{
+    color: white;
+    height: 50px;
+}
+
+
+.customer_select_danhmuc {
+    font-size: 3rem;
+    color: black;
+    font-weight: 600;
+}
+
+.customer_select_product_all {
+    font-size: 2rem;
+    font-weight: 600;
+    color: black;
+
+}
+
+.customer_select_product {
+    font-size: 1.6rem;
+    color: black;
+}
+
+
+
+.cart_heading_name {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cart_heading_store_name {
+    font-size: 1.4rem;
+}
+
+.cart_heading_store_address {
+    font-size: 1.4rem;
+}
+
+.customer_dichothue-item {
+    display: block;
+    text-decoration: none;
+    background-color: var(--white-color);
+    margin-top: 40px;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 3px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1s;
+    will-change: tranform;
+
+    width: 180px;
+    height: 300px;
+}
+
+.customer_dichothue-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+
+}
+
+.customer_dichothue-item__img {
+    min-width: 180px;
+    min-height: 180px;
+    max-width: 180px;
+    max-height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.customer_dichothue-item__name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: black;
+    line-height: 2rem;
+    margin: 10px 0 0 0;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+}
+
+.customer_dichothue-item__price {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #888;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.customer_addcart_btn{
+    display: flex;
+    margin: auto;
+    background-color: #888;
+    margin-top: 10px;
+    color: white;
+}
+
+.customer_search_product_store {
+    margin-bottom: 20px;
+}

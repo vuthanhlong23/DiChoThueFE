@@ -1,0 +1,186 @@
+
+.customer_store_heading {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.customer_store_list {
+    margin-top: 20px;
+}
+
+.customer_store_list-img {
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    object-fit:cover;
+    object-position: center;
+    margin: 12px;
+    border-radius: 2px;
+} 
+
+.customer_store_list-img-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+    position: relative;
+    top: -34px;
+}
+
+.cart-body-item__service-price {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 1.6rem;
+
+}
+
+.btn_select_store {
+    color: white;
+    font-weight: 500;
+}
+
+
+
+.wrap__profile_store-body {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+}
+
+.wrap__cart-body-left {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.profile_store__img {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin: 12px;
+    border-radius: 4px;
+    position: relative;
+    left: 100px;
+}
+
+
+.profile_store__name {
+    font-size: 2.4rem;
+    font-weight: 450;
+    color: var(--text-color);
+}
+
+.profile_store__id {
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+
+.profile_store__about-info {
+    display: flex;
+    flex: 1; 
+    width: 600px;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    margin: 30px 0 0 0;
+
+}
+
+.profile_store__about-info::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #ccc;
+    margin: auto;
+} 
+
+.profile_store__about-info::after {
+    margin-left: 10px;
+}
+
+
+.profile_store__contact-section {
+    font-size: 1.4rem;
+    font-weight: 450;
+}
+
+
+
+
+.profile_store__contact-info-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #a49a9a;
+    margin-top: 20px;
+    display: block;
+}
+
+
+.profile_store__contact-info {
+    position: relative;
+    display: flex;
+    margin-top: 14px;
+}
+
+.profile_store__representative {
+    position: absolute;
+    left: 120px;
+} 
+
+.profile_store__phone-number {
+    position: absolute;
+    left: 120px;
+}
+
+
+.profile_store__address {
+    position: absolute;
+    left: 120px;
+}
+
+
+.profile_store__email {
+    position: absolute;
+    left: 120px;
+}
+
+
+
+.profile_store__basic-info-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #a49a9a;
+    margin-top: 30px;
+    display: block;
+}
+
+.profile_store__basic-section {
+    font-size: 1.4rem;
+    font-weight: 450;
+}
+
+.profile_store__basic-info {
+    position: relative;
+    display: flex;
+    margin-top: 14px;
+}
+
+.profile_store__open_hour {
+    position: absolute;
+    left: 120px;
+}
+
+.profile_store__close_hour {
+    position: absolute;
+    left: 120px;
+}
+
+.profile_store__condition_area {
+    position: absolute;
+    left: 120px;
+    padding-bottom: 50px;
+}

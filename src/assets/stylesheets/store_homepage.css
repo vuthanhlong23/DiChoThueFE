@@ -1,0 +1,38 @@
+.container {
+    margin-top: 200px;
+    position: relative;
+    height: 500px;
+}
+
+.btn-dark{
+    color: white;
+    height: 50px;
+}
+
+
+
+.store_homepage_welcome {
+    margin-top: 40px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.store_homepage_welcome2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.store-body-item__service-img {
+    object-fit:cover;
+    object-position: center;
+    border-radius: 2px;
+}   

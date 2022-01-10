@@ -1,0 +1,12 @@
+.dichothue-system__design-description {
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dichothue-system__design-heading {
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,145 @@
+.container {
+    margin-top: 180px;
+    position: relative;
+    height: 500px;
+}
+
+.btn-dark{
+    color: white;
+    height: 50px;
+}
+
+.cart_heading_name {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.cart_heading_store_name {
+    font-size: 1.4rem;
+}
+
+.cart_heading_store_address {
+    font-size: 1.4rem;
+}
+
+.customer_cart_info {
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-bottom: 2px solid #ccc;
+    padding: 8px 0;
+}
+
+
+
+.cart-body-item__service-img {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit:cover;
+    object-position: center;
+    border-radius: 2px;
+}   
+
+.cart-body-item__content {
+    margin: 12px;
+    width: 100%;
+}
+
+.cart-body-item__service-name {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.cart-body-item__service-details {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+.cart-body-item__category-text-default {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+
+}
+
+.cart-body-item__category-description {
+    color: var(--text-color);
+    font-size: 1.6rem;
+    font-weight: 400;
+
+}
+
+.cart-body-item__service-element {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 1.6rem;
+
+}
+
+.cart-body-item__remove {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 2rem;
+    cursor: pointer;
+    max-width: 100px;
+}
+
+.cart-body-item__remove:hover {
+    color: var(--primary-color)
+}
+.cart-body-item__remove-icon {
+    padding: 4px;
+}
+
+.cart-body-item {
+    display: flex;
+}
+
+
+
+.wrap__cart-body-right {
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 40px;
+}
+
+.cart-body__summary-title {
+    font-size: 2rem;
+    font-weight: 500;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+.cart-body__total {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 0 30px;
+    height: 30px;
+    border-bottom: 2px solid #ccc;
+}
+
+.cart-body__total-price-text-default {
+    font-size: 1.8rem;
+    font-weight: 500;
+}   
+
+.cart_body__total-price {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.cart-body__check-out-btn {
+    margin: 20px 30px;
+    width: 306px;
+}
+
+.cart-body__check-out-btn:hover {
+    background-color: var(--second-primary-color) !important;
+}

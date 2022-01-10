@@ -1,0 +1,23 @@
+.dichothue-customer-checkout__design-description {
+    flex: 1;
+    align-items: center;
+    
+}
+
+.dichothue-customer-checkout__design-heading {
+    font-size: 2rem;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.container {
+    margin-top: 180px;
+    position: relative;
+    height: 500px;
+}
+
+.btn-dark{
+    color: white;
+    height: 50px;
+}

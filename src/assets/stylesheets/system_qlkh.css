@@ -1,0 +1,145 @@
+.system-tkddh_submit_btn {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 330px;
+    color: white;
+}
+
+.form-select {
+    margin: 10px 0 30px 0;
+    font-size: 1.4rem;
+}
+
+.system-qlkh_submit_btn {
+    color: white;
+}
+
+.wrap__profile-body {
+    margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+}
+
+.wrap__cart-body-left {
+    box-shadow: 0 0 10px #ccc;
+}
+
+.profile__img {
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: center;
+    margin: 12px;
+    border-radius: 4px;
+    position: relative;
+    left: 100px;
+}
+
+
+.profile__name {
+    font-size: 2.4rem;
+    font-weight: 450;
+    color: var(--text-color);
+}
+
+
+
+
+.profile__about-info {
+    display: flex;
+    flex: 1; 
+    width: 600px;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    margin: 50px 0 0 0;
+
+}
+
+.profile__about-info::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #ccc;
+    margin: auto;
+} 
+
+.profile__about-info::after {
+    margin-left: 10px;
+}
+
+
+.profile__contact-section {
+    font-size: 1.4rem;
+    font-weight: 450;
+}
+
+
+
+
+.profile__contact-info-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #a49a9a;
+    margin-top: 20px;
+    display: block;
+}
+
+
+.profile__contact-info {
+    position: relative;
+    display: flex;
+    margin-top: 14px;
+}
+
+.profile__phone-number {
+    position: absolute;
+    left: 100px;
+}
+
+
+.profile__address {
+    position: absolute;
+    left: 100px;
+}
+
+
+.profile__email {
+    position: absolute;
+    left: 100px;
+}
+
+
+
+.profile__basic-info-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #a49a9a;
+    margin-top: 30px;
+    display: block;
+}
+
+.profile__basic-section {
+    font-size: 1.4rem;
+    font-weight: 450;
+}
+
+.profile__basic-info {
+    position: relative;
+    display: flex;
+    margin-top: 14px;
+}
+
+.profile__birthday {
+    position: absolute;
+    left: 100px;
+}
+
+.profile__gender{
+    position: absolute;
+    left: 100px;
+}

@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../stylesheets/base.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+ 
+    <link rel="stylesheet" href="../stylesheets/header.css">
+    <link rel="stylesheet" href="../stylesheets/booking.css">
+
+</head>
+
+
+<body>
+    
+    <div class="app">
+        <header class="customer_header_1">
+            <div class="grid">
+
+                <div class="header_desktop_customer_1">
+                    <div class="header_desktop_customer_1-logo">
+                        <a href="#">
+                            <img class="logo-Dichothue" src="./../res/logo/logo.png" alt=""> 
+                        </a>
+                    </div>
+
+                    <form class="header_desktop_customer_1__search d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+                        <button type="submit" class="btn btn-dark">Tìm kiếm</button>
+                    </form>
+
+                    <a href="#" class="header_desktop_customer_1__cart">
+                        <i class="header_desktop_customer_1__cart-icon fas fa-shopping-cart"></i>
+                    </a>
+
+                    <div class="header_desktop_customer_1__account">
+                        <i class="header_desktop_customer_1__account-icon fas fa-user-alt"></i>
+                        <ul class="header_desktop_customer_1__account-option">
+                            <li><a href="#" class="header_desktop_customer_1__account-item">Tài khoản của tôi</a></li>
+                            <li><a href="#" class="header_desktop_customer_1__account-item">Đơn mua</a></li>
+                            <li><a href="#" class="header_desktop_customer_1__account-item">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <header class="customer_header_2">
+            <div class="grid">
+                <div class="header_desktop_customer_2">
+                    <nav class="header_desktop_customer_2__navbar">
+                        <ul class="header_desktop_customer_2__navbar-list">
+                            <li class="header_desktop_customer_2__navbar-item"> <a href="#">TRANG CHỦ</a></li>
+                            <li class="header_desktop_customer_2__navbar-item"><a href="#">HỆ THỐNG CỬA HÀNG</a></li>
+                            <li class="header_desktop_customer_2__navbar-item"><a href="#">CÂU HỎI THƯỜNG GẶP</a></li>
+                            <li class="header_desktop_customer_2__navbar-item"><a href="#">LIÊN HỆ</a></li>
+                        </ul>   
+                    </nav>
+                </div>
+        </header>
+
+
+        <div class="container">
+            <div class="grid">
+                <div class="row align-items-start customer_cart_info">
+                    <div class="wrap__booking-body">
+                        <div class="col-7">
+                            <div class="booking__time-details">
+                                <div class="booking__time-heading">
+                                    <span class="booking__time-heading-text">Thời gian nhận hàng&nbsp</span>
+                                    <span class="booking__mandatory-icon">*</span>
+                                </div>
+                                <div class="booking__time-input">
+                                    <input type="number" class="booking__time-hour-input booking__input-type" placeholder="Giờ">
+                                    <input type="number" class="booking__time-minute-input booking__input-type" placeholder="Phút">
+                                </div>
+                            </div>
+                            <div class="booking__location-details">
+                                <div class="booking__location-heading">
+                                    <span class="booking__location-heading-text">Địa chỉ&nbsp</span>
+                                    <span class="booking__mandatory-icon">*</span>
+                                </div>
+                                <input type="text" class="booking__location-input booking__input-type" placeholder="16A Vũ Ngọc Phan">
+                            </div>
+                            <div class="booking__phone-number-details">
+                                <span class="booking__phone-number-heading-text">Số điện thoại</span>
+                                <input type="number" class="booking__phone-number-input booking__input-type" placeholder="037 xxx xxxx">
+                            </div>
+                            <div class="areaCondition__input-details">
+                                <span class="areaCondition__input-text">Mức độ vùng dịch</span>
+                                <select class="auth-form__input areaCondition__input-type">
+                                    <option>Vùng xanh</option>
+                                    <option>Vùng vàng</option>
+                                    <option>Vùng cam</option>
+                                    <option>Vùng đỏ</option>
+                                </select>
+                            </div>
+                            <span class="customer_summary_product-list">
+                                Danh sách sản phẩm
+                            </span>
+                            <div class="customer_summary_product">
+                                <span class="customer_summary_product_item customer_summary_product_name">Tên sản phẩm</span>
+                                <span class="customer_summary_product_item customer_summary_product_quantity">Số lượng</span>
+                                <span class="customer_summary_product_item customer_summary_product_money">Tổng tiền</span>
+                            </div>
+                            <div class="customer_summary_product">
+                                <span class="customer_summary_product_item customer_summary_product_name">Khoai môn</span>
+                                <span class="customer_summary_product_item customer_summary_product_quantity">2</span>
+                                <span class="customer_summary_product_item customer_summary_product_money">40000đ</span>
+                            </div>
+                            
+                        </div>
+                    </div>
+
+                    <div class="col-5">
+                        <div class="row">
+                            <div class="customer_payment__input-details">
+                                <span class="customer_payment__input-text">Hình thức thanh toán</span>
+                                <select class="auth-form__input customer_payment__input-type">
+                                    <option>Tiền mặt</option>
+                                    <option>Thẻ thanh toán</option>
+                                </select>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col">
+                                <div class="wrap__cart-body-right">
+                                    <span class="cart-body__summary-title">Tổng kết đơn hàng</span>
+                                    <div class="cart-body__total">
+                                        <div class="cart-body__total-price-text-default">Tổng tiền hàng</div>
+                                        <div class="cart_body__total-price">$9.00</div>
+                                    </div>
+                                    <div class="cart-body__total">
+                                        <div class="cart-body__total-price-text-default">Tiền phí vận chuyển</div>
+                                        <div class="cart_body__total-price">$9.00</div>
+                                    </div>
+                                    <div class="cart-body__total">
+                                        <div class="cart-body__total-price-text-default cart_body__total-price_all">Tổng thanh toán</div>
+                                        <div class="cart_body__total-price cart_body__total-price_all">$18.00</div>
+                                    </div>
+                                    <a href="#" class="cart-body__check-out-btn btn btn--primary">TIẾN HÀNH THANH TOÁN</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+</html>

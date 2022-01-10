@@ -1,0 +1,131 @@
+.container {
+    margin-top: 200px;
+    position: relative;
+    height: 500px;
+}
+
+.btn-dark{
+    color: white;
+    height: 50px;
+}
+
+
+
+.dichothue__contact-heading {
+    display: flex;
+    flex: 1; 
+    justify-content: center;
+    font-weight: 400;
+    color: var(--primary-color);
+    letter-spacing: 2px;
+    margin: 50px 0 0 0;
+
+}
+/* Làm cái thanh ngang chữ */
+.dichothue__contact-heading::before, .dichothue__contact-heading::after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 2px solid #ccc;
+    margin: auto;
+} 
+
+.dichothue__contact-heading::before {
+    margin-right: 10px;
+
+}
+.dichothue__contact-heading::after {
+    margin-left: 10px;
+}
+
+
+.dichothue__contact-statement {
+    display: flex;
+    flex: 1; 
+    justify-content: center;
+    font-weight: 400;
+    color: var(--second-primary-color);
+    letter-spacing: 2px;
+    margin: 50px 0 0 0;
+}
+
+.dichothue__contact-statement_location {
+    display: flex;
+    flex: 1; 
+    justify-content: center;
+    font-weight: 400;
+    color: var(--second-primary-color);
+    letter-spacing: 2px;
+    margin-top: -40px;
+}
+
+.wrap__contact-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 50px 80px;
+    width: 100%;
+}
+
+.contact-content-item {
+    font-size: 2.6rem;
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+}
+
+
+
+
+/* .contact-content__icon {
+
+} */
+
+.contact-content__title {
+    margin-left: 20px;
+    font-weight: 400;
+}
+
+.contact-content__phone-number {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+    color: var(--text-color);
+    text-align: center;
+}
+ 
+.contact-content__address {
+    text-decoration: none;
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: 600;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+}
+
+.contact-content__social-media {
+    text-align: center;
+    margin-left: 30px;
+}
+
+.contact-content__social-item {
+    text-decoration: none;
+    font-size: 4rem;
+    color: var(--primary-color);
+    margin-right: 20px;
+
+}
+
+.dichothue-contact-location__img {
+    padding-top: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 2px;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top:-40px;
+}

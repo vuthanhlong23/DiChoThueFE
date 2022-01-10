@@ -1,0 +1,245 @@
+
+/* Authen modal*/
+.register-auth-form {
+    width: 630px;
+    /* height: 500px; */
+    background-color: var(--white-color);
+    border-radius: 5px;
+    /* Khi con vượt quá cha thì hidden nó đi */
+    overflow: hidden;
+    /* z-index: 2; */
+}
+
+.login-auth-form {
+    width: 400px;
+    background-color: var(--white-color);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.auth-form__container{
+    padding: 0 32px;
+}
+
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 12px 0 12px;
+    /* z-index: 2; */
+}
+
+.auth-form__heading{
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+
+}
+
+.auth-form__switch-btn{
+    font-size: 1.6rem;
+    color: var(--primary-color);
+    font-weight: 400;
+    color: var(--primary-color);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* .auth-form__form{
+} */
+
+.auth-form__group {
+    display: flex;
+    margin-top: 14px;
+    padding: 0 12px;
+    align-items: center;
+    position: relative;
+}
+
+.auth-form__group label {
+    font-size: 1.4rem;
+    width: 130px;
+}
+
+.auth-form__input {
+    width: 300px;
+    height: 34px;
+    font-size: 1.4rem;
+    border: 1px solid var(--border-color);
+    border-radius: 30px;
+    outline: none;
+    background-color: #e5e5e5;
+    padding: 0 16px;
+    /* position: relative;
+    left: 50px; */
+}
+
+.auth-form__group i {
+    position: absolute;
+    top: 10px;
+    left: 410px;
+    visibility: hidden;
+}
+
+.auth-form__group-check-icon {
+    color: #2ecc71;
+    visibility: visible;
+    font-size: 1.4rem;
+    
+}
+
+.auth-form__group-exclamation-icon {
+    color: #e74c3c;
+    visibility: visible;
+    font-size: 1.4rem;
+}
+
+
+
+.auth-form__group small {
+    font-size: 1.2rem;
+    position: absolute;
+    left: 450px;
+    visibility: hidden;
+}
+
+.auth-form__group.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
+.auth-form__group:hover>.auth-form__input {
+    border: 1px solid var(--black-color);
+}
+
+.auth-form__group.success input {
+    border-color: #2ecc71;
+}
+
+.auth-form__group.error input {
+    border-color: #e74c3c;
+}
+
+.auth-form__group.success .auth-form__group-check-icon {
+    visibility: visible;
+}
+
+.auth-form__group.error .auth-form__group-exclamation-icon {
+    visibility: visible;
+}
+
+
+.login-error-message.error {
+    visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+.auth-form__aside{
+    margin-top: 18px;
+}
+
+.auth-form__policy-text{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+}
+
+.auth-form__text-link{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.auth-form_controls{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 16px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+     
+}
+
+.auth-form_controls-back{
+    margin-right: 8px;
+}
+
+
+.auth-form__help{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.auth-form__help-link{
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #939393;
+
+}
+
+.auth-form__help-separate {
+    display: block;
+    height: 12px;
+    border-left: 1px solid #eaeaea;
+    margin: 2px 16px 0;
+}
+
+.auth-form__help-forgot {
+    color: var(--primary-color);
+}
+
+
+/* Cho cái login */
+
+.auth-form__register-text {
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: center;
+    padding: 0 12px;
+    margin: 16px 0;
+}
+
+.auth-form__register-link {
+    text-decoration: none;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+
+.login-error-message {
+    font-size: 1.2rem;
+    padding: 14px 12px 0 12px;
+    color: #e74c3c;
+    display: block;
+    visibility: hidden;
+}
+
+.auth-form__group small {
+    font-size: 1.2rem;
+    position: absolute;
+    left: 450px;
+    visibility: hidden;
+}
+
+.auth-form__group.error small {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+
+.areaCondition__input-type {
+    border: 1px solid #000;
+    background-color: #e5e5e5;
+    border-radius: 2px;
+    height: 30px;
+    padding-left: 10px;
+    margin-top: 10px;
+}

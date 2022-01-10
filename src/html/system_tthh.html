@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../stylesheets/base.css" />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="../fonts/fontawesome-free-5.15.3-web/css/all.min.css">
+ 
+    <link rel="stylesheet" href="../systemcss/system_header.css">
+    <link rel="stylesheet" href="../systemcss/system_homepage.css">
+    <link rel="stylesheet" href="../systemcss/system_base.css">
+    <link rel="stylesheet" href="../systemcss/system_tkddh.css">
+
+</head>
+
+
+<body>
+    
+    <div class="app">
+        <header class="system_header">
+            <div class="grid">
+
+                <div class="header_desktop_system">
+                    <div class="header_desktop_system-logo">
+                        <a href="#">
+                            <img class="logo-Dichothue" src="./../res/logo/logo.png" alt=""> 
+                        </a>
+                    </div>
+
+                    <div class="dropdown system_select_function_nav">
+                        <a class="btn btn-secondary dropdown-toggle system_size_function" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                          Chọn chức năng
+                        </a>
+                        <ul class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">1. Thống kê đơn đặt hàng của cửa hàng/siêu thị</a></li>
+                          <li><a class="dropdown-item" href="#">2. Thống kê đơn đặt hàng cho công ty giao hàng</a></li>
+                          <li><a class="dropdown-item" href="#">3. Quản lý sản phẩm</a></li>
+                          <li><a class="dropdown-item" href="#">4. Quản lý thông tin khách hàng</a></li>
+                          <li><a class="dropdown-item" href="#">5. Quản lý thông tin cửa hàng/siêu thị</a></li>
+                          <li><a class="dropdown-item" href="#">6. Quản lý thông tin công ty giao hàng</a></li>
+                          <li><a class="dropdown-item" href="#">7. Hoàn tiền</a></li>
+                        </ul>
+                    </div>
+
+
+                    <div class="header_desktop_system__account">
+                        <i class="header_desktop_system__account-icon fas fa-user-alt"></i>
+                        <ul class="header_desktop_system__account-option">
+                            <li><a href="#" class="header_desktop_system__account-item">Tài khoản của tôi</a></li>
+                            <li><a href="#" class="header_desktop_system__account-item">Đăng xuất</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="container">
+            <div class="grid">
+                <div class="row">
+                    <div class="dichothue-system__design-description">
+                        <h5 class="dichothue-system__design-heading">8. THỐNG KÊ TIỀN HOA HỒNG</h5>
+                    </div>
+                </div>
+                <div class="row">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Chọn cửa hàng</option>
+                        <option value="1">Coop Food chi nhánh 3</option>
+                      </select>
+                    <div class="col-8">
+                        <div class="row">
+                            <div class="col-3">
+                                <span class="cart_heading_store_name">Coop Food chi nhánh 2</span>
+                            </div>
+                            <div class="col-6">
+                                <span class="cart_heading_store_address">(148 Nguyễn Xí, phường 13, quận Bình Thạnh, tpHCM)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 system-tkddh_start_day">
+                        Chọn ngày bắt đầu
+                        <input type="date" class="system-tkddh__date-input system-tkddh__input-type">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-5 system-tkddh_end_day">
+                        Chọn ngày kết thúc
+                        <input type="date" class="system-tkddh__date-input system-tkddh__input-type">
+                    </div>
+                </div>
+                <button type="button" class="btn btn-secondary system-tkddh_submit_btn">Lập danh sách</button>
+
+                <div class="row system_tkddh-store-list-title">
+                    <div class="col-4">
+                        <span class="system_tkddh-store-list-item">
+                            Mã đơn hàng
+                        </span>
+                    </div>
+                    <div class="col-4">
+                        <span class="system_tkddh-store-list-item">
+                            Tổng tiền mặt hàng
+                        </span>
+                    </div>
+                    <div class="col-4">
+                        <span class="system_tkddh-store-list-item">
+                            Tổng tiền đơn hàng
+                        </span>
+                    </div>
+                </div>
+                <div class="row system_tkddh-store-list">
+                    <div class="col-4">
+                        <span class="system_tkddh-store-list-item">
+                            DDH343653
+                        </span>
+                    </div>
+                    <div class="col-4">
+                        <span class="system_tkddh-store-list-item">
+                            42.000đ
+                        </span>
+                    </div>
+                    <div class="col-4">
+                        <span class="system_tkddh-store-list-item">
+                            65.000đ
+                        </span>
+                    </div>
+                </div>
+                
+                
+                <div class="row">
+                    <div class="col-5">
+                        <div class="wrap__tthh-body-right">
+                            <span class="tthh-body__summary-title">Tổng kết các đơn hàng</span>
+                            <div class="tthh-body__total">
+                                <div class="tthh-body__total-price-text-default">Tổng cộng tiền đơn hàng</div>
+                                <div class="tthh_body__total-price">36.000.000</div>
+                            </div>
+                            <div class="tthh-body__total">
+                                <div class="tthh-body__total-price-text-default">Tổng cộng tiền hoa hồng</div>
+                                <div class="tthh_body__total-price">3.600.000</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+.cart_heading_store_name {
+    font-size: 1.4rem;
+}
+
+.cart_heading_store_address {
+    font-size: 1.4rem;
+}
+
+.system-tkddh__date-input {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.system-tkddh__input-type {
+    border: 1px solid #000;
+    background-color: #e5e5e5;
+    border-radius: 2px;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: 30px;
+}
+
+.system-tkddh_start_day{
+    font-size: 1.4rem;
+}
+.system-tkddh_end_day {
+    font-size: 1.4rem;
+}
+
+.system-tkddh_submit_btn {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 330px;
+    color: white;
+}
+
+.form-select {
+    margin: 10px 0 30px 0;
+    font-size: 1.4rem;
+}
+
+
+.system_tkddh-store-list {
+    font-size: 1.6rem;
+    border-top: 2px solid #ccc;
+    padding: 8px 0;
+    margin-top: 20px;
+}
+
+.system_tkddh-store-list-item {
+    display: flex;
+}
+
+
+.system_tkddh-store-list-title {
+    font-weight: 500;
+    font-size: 1.6rem;
+    padding: 8px 0;
+    margin-top: 80px;
+}
+
+/* THONG KE TIEN HOA HONG */
+
+
+
+.wrap__tthh-body-right {
+    box-shadow: 0 0 10px #ccc;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding-bottom: 20px;
+}
+
+.tthh-body__summary-title {
+    font-size: 2rem;
+    font-weight: 500;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+
+
+.tthh-body__total {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 0 30px;
+    height: 30px;
+    border-bottom: 2px solid #ccc;
+}
+
+.tthh-body__total-price-text-default {
+    font-size: 1.8rem;
+    font-weight: 500;
+}   
+
+.tthh_body__total-price {
+    font-size: 1.8rem;
+    font-weight: 500;
+}

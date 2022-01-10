@@ -1,0 +1,98 @@
+.system_size_function {
+    width: 300px;
+    font-size: 2rem;
+    color: white;
+}
+
+
+.system_select_function_nav {
+    top: 30px;
+    width: 600px;
+}
+
+.system_select_function_nav_item {
+    width: 500px;
+}
+
+.dropdown-item {
+    font-size: 1.8rem;
+}
+
+.container {
+    margin-top: 120px;
+    position: relative;
+    height: 500px;
+}
+
+.system_header {
+    background-color: var(--primary-color);
+    box-shadow: 0 1px #ccc;
+    position: fixed;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.header_desktop_system {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-system-Dichothue {
+    width: 60%;
+    position: relative;
+}
+
+.header_desktop_system-logo {
+    width: 200px;
+    height: 100px;
+}
+
+
+.header_desktop_system__account {
+    position: relative;
+    top: 20px;
+    left: -50px;
+
+}
+
+.header_desktop_system__account-icon {
+    font-size: 4rem;
+    color: var(--white-color);  
+}
+
+.header_desktop_system__account-option {
+    position: absolute;
+    top: 60px;
+    right: -20px;
+    background-color: var(--white-color);
+    width: 200px;
+    border-radius: 2px;
+    box-shadow: 0 2px 1px #ccc;
+    border: 1px solid #D3D3D3;
+    cursor: default;
+    display: none;
+    z-index:2;
+    list-style: none;
+    padding: 0;
+
+}
+
+.header_desktop_system__account:hover .header_desktop_system__account-option {
+    display: block;
+
+}
+
+.header_desktop_system__account-item {
+    width: 100%;
+    margin: 0;
+    padding: 10px 0 10px 20px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: inline-block;
+    color: var(--text-color);
+    z-index: 2;
+}

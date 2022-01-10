@@ -1,0 +1,42 @@
+
+.system_registration-store-list {
+    font-size: 1.6rem;
+    padding: 8px 0;
+    margin-top: 20px;   
+    font-weight: 500;
+}
+
+.system_registration-store-list-item {
+    display: flex;
+}
+
+.system_registration-store-list_btn {
+    color: white;
+    margin-top: 6px;
+}
+
+.a_tag {
+    text-decoration: none;
+}
+
+.system-store_registration_start_day{
+    font-size: 1.4rem;
+}
+
+.system-store_registration_end_day {
+    font-size: 1.4rem;
+}
+
+.system-store_registration__date-input {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.system-store_registration__input-type {
+    border: 1px solid #000;
+    background-color: #e5e5e5;
+    border-radius: 2px;
+    height: 30px;
+    padding-left: 10px;
+    margin-left: 30px;
+}

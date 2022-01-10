@@ -1,0 +1,50 @@
+.container {
+    margin-top: 200px;
+    position: relative;
+    height: 500px;
+}
+
+.btn-dark{
+    color: white;
+    height: 50px;
+}
+
+.customer_store_heading {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.customer_store_list {
+    margin-top: 20px;
+}
+
+.customer_store_list-img {
+    min-width: 80px;
+    min-height: 80px;
+    max-width: 80px;
+    max-height: 80px;
+    object-fit:cover;
+    object-position: center;
+    margin: 12px;
+    border-radius: 2px;
+} 
+
+.customer_store_list-img-name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--text-color);
+    position: relative;
+    top: -34px;
+}
+
+.cart-body-item__service-price {
+    font-weight: 500;
+    color: var(--text-color);
+    font-size: 1.6rem;
+
+}
+
+.btn_select_store {
+    color: white;
+    font-weight: 500;
+}

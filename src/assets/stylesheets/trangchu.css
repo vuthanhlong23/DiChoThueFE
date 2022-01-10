@@ -1,0 +1,75 @@
+.container {
+    margin-top: 52px;
+    position: relative;
+    height: 500px;
+}
+
+.btn-dark{
+    color: white;
+    height: 50px;
+}
+
+.dichothue-customer__design-description {
+    margin-top: 40px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dichothue-customer__design-heading {
+    font-size: 2rem;
+    color: var(--primary-color);
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.dichothue-customer__design-favorite {
+    font-size: 1.8rem;
+    color: var(--text-color);
+    font-weight: 350;
+    margin: 0 0 20px 0;
+}
+
+
+
+/* Policy */
+
+.policy-company {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.policy-company-item {
+    display: flex;
+    align-items: center;
+    flex-basis: 30%;
+}
+
+
+.policy-company__icon {
+    font-size: 5rem;
+    margin-right: 20px;
+    color: var(--primary-color);
+}
+
+.policy-company__heading {
+    font-size: 1.6rem;
+}
+
+.policy-company__description {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+.dichothue-customer-services-type__img {
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2px;
+}
