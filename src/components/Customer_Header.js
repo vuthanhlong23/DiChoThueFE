@@ -53,7 +53,7 @@ const CustomerHeader = () => {
                         <div className="header_desktop_customer_1__account">
                             <i className="header_desktop_customer_1__account-icon fas fa-user-alt"></i>
                             <ul className="header_desktop_customer_1__account-option">
-                                <li><Link to="/customer/profile " className="header_desktop_customer_1__account-item">Tài khoản của tôi</Link></li>
+                                <li><Link to="/customer/profile" className="header_desktop_customer_1__account-item">Tài khoản của tôi</Link></li>
                                 <li><Link to="/customer/bookinghistory" className="header_desktop_customer_1__account-item">Đơn mua</Link></li>
                                 <li><Link to="/customer/login" onClick={()=>handleRemoveCookie()} className="header_desktop_customer_1__account-item">Đăng xuất</Link></li>
                             </ul>
