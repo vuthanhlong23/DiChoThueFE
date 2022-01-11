@@ -126,12 +126,12 @@ const SystemTKDDH = () => {
                                     </div>
                                     <div class="col-4">
                                         <span class="system_tkddh-store-list-item">
-                                            {listorder.total_amount}
+                                            {listorder.total_amount}đ
                                         </span>
                                     </div>
                                     <div class="col-4">
                                         <span class="system_tkddh-store-list-item">
-                                            {listorder.total}
+                                            {listorder.total}đ
                                         </span>
                                     </div>
                                 </div>

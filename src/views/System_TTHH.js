@@ -121,12 +121,12 @@ const SystemTTHH = () => {
                                     </div>
                                     <div class="col-4">
                                         <span class="system_tkddh-store-list-item">
-                                            {listorder.total_amount}
+                                            {listorder.total_amount}đ
                                         </span>
                                     </div>
                                     <div class="col-4">
                                         <span class="system_tkddh-store-list-item">
-                                            {listorder.total}
+                                            {listorder.total}đ
                                         </span>
                                     </div>
                                 </div>
@@ -143,11 +143,11 @@ const SystemTTHH = () => {
                                 <span className="tthh-body__summary-title">Tổng kết các đơn hàng</span>
                                 <div className="tthh-body__total">
                                     <div className="tthh-body__total-price-text-default">Tổng cộng tiền đơn hàng</div>
-                                    <div className="tthh_body__total-price">{storelist.total_amount}</div>
+                                    <div className="tthh_body__total-price">{storelist.total_amount}đ</div>
                                 </div>
                                 <div className="tthh-body__total">
                                     <div className="tthh-body__total-price-text-default">Tổng cộng tiền hoa hồng</div>
-                                    <div className="tthh_body__total-price">{storelist.commission}</div>
+                                    <div className="tthh_body__total-price">{storelist.commission}đ</div>
                                 </div>
                             </div>
                         </>

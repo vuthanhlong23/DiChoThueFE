@@ -1,0 +1,151 @@
+.container {
+    margin-top: 200px;
+    position: relative;
+    height: 500px;
+}
+
+.store_qlsp_dichothue-item {
+    display: block;
+    text-decoration: none;
+    background-color: var(--white-color);
+    margin-top: 40px;
+    position: relative;
+    border-radius: 2px;
+    box-shadow: 0 3px 2px 2px rgba(0, 0, 0, 0.1);
+    transition: transform linear 0.1s;
+    will-change: tranform;
+
+    width: 180px;
+    height: 390px;
+}
+
+.store_qlsp_dichothue-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05);
+
+}
+
+.store_qlsp_dichothue-item__img {
+    min-width: 180px;
+    min-height: 180px;
+    max-width: 180px;
+    max-height: 180px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+}
+
+.store_qlsp_dichothue-item__name {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: black;
+    line-height: 2rem;
+    margin: 10px 0 0 0;
+    text-align: center;
+    display: block;
+    overflow: hidden;
+}
+
+.store_qlsp_dichothue-item__price {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #888;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.store_qlsp_addcart_btn{
+    display: flex;
+    margin: auto;
+    background-color: #888;
+    margin-top: 10px;
+    color: white;
+}
+
+.store_qlsp_search_product_store {
+    margin-bottom: 20px;
+}
+
+
+.store_qlsp_add_product {
+    padding-top: 40px;
+    color:#186A1B;
+}
+
+.store_qlsp2_add_product {
+    color:#186A1B;
+}
+
+.store_qlsp_add_product_details {
+    font-size: 1.6rem;
+}
+
+.store_qlsp_add_button_details {
+    margin-bottom: 80px;
+    background-color: #888;
+    margin-top: 18px;
+    color: white;
+}
+/*  */
+
+.wrap__store_qlsp_product-details-body {
+    border-right: 2px solid #ccc;
+}
+
+
+.wrap-right__store_qlsp_product-details-body {
+    margin-top: 30px;
+    padding-right: 20px;
+    display: flex;
+}
+
+
+.store_qlsp_product-details__img {
+    min-width: 100px;
+    min-height: 100px;
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: cover;
+    object-position: center;
+    margin: 12px;
+    border-radius: 4px;
+    position: relative;
+}
+
+
+.store_qlsp_product-details__name {
+    font-size: 2.4rem;
+    font-weight: 450;
+    color: var(--text-color);
+}
+
+.store_qlsp_product-details__contact-section {
+    font-size: 1.4rem;
+    font-weight: 450;
+}
+
+
+
+
+.store_qlsp_product-details__contact-info-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #a49a9a;
+    margin-top: 20px;
+    display: block;
+}
+
+
+.store_qlsp_product-details__contact-info {
+    position: relative;
+    display: flex;
+    margin-top: 14px;
+}
+
+.store_qlsp_product-details__productinfo {
+    position: absolute;
+    left: 120px;
+}
