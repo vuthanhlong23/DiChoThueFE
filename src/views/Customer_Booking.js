@@ -68,7 +68,7 @@ const CustomerBooking = () => {
                     time: FormTime(hour) + ":" + FormTime(minute) + ":00",
                     total_amount: Number(localStorage.getItem("total_money")),
                     shipping_fee: 15000,
-                    total: Number(localStorage.getItem("total_money")),
+                    total: Number(localStorage.getItem("total_money")) + 15000,
                     payment_type: payment_type,
                     store: store,
                     products: products
@@ -201,11 +201,11 @@ const CustomerBooking = () => {
                                     </div>
                                     <div className="cart-body__total">
                                         <div className="cart-body__total-price-text-default">Tiền phí vận chuyển</div>
-                                        <div className="cart_body__total-price">0</div>
+                                        <div className="cart_body__total-price">15.000đ</div>
                                     </div>
                                     <div className="cart-body__total">
                                         <div className="cart-body__total-price-text-default cart_body__total-price_all">Tổng thanh toán</div>
-                                        <div className="cart_body__total-price cart_body__total-price_all">{localStorage.getItem("total_money")}đ</div>
+                                        <div className="cart_body__total-price cart_body__total-price_all">{Number(localStorage.getItem("total_money")) + 15000}đ</div>
                                     </div>
                                     <form onSubmit={Booking}>
                                         <button type="submit" className="cart-body__check-out-btn btn btn--primary">TIẾN HÀNH THANH TOÁN</button>

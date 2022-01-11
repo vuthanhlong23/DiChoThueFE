@@ -46,7 +46,7 @@ const StoreQLDH = () => {
                     Giao hàng thành công
                 </div>
                 <div className="col-2 store_qldh_booking_history-item">
-                    <button type="button" className="store_qldh_booking_history-item_cancel_btn btn btn btn-secondary ">Từ chối đơn hàng</button>
+                    <button type="button" className="store_qldh_booking_history-item_cancel_btn btn btn btn-secondary ">Xác nhận đơn hàng</button>
                 </div>
             </div>
         </div>
