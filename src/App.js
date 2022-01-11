@@ -15,7 +15,7 @@ import CustomerBooking from './views/Customer_Booking';
 import CustomerOrderDetail from './views/Customer_OrderDetail';
 import CustomerContact from './views/Customer_Contact';
 import SystemLogin from './components/System_Login';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Redirect, Route, Switch} from 'react-router-dom';
 import CustomerFAQ from './views/Customer_Faq';
 import SystemQLKH from './views/System_QLKH';
 import SystemHeader from './components/System_Header';
@@ -58,6 +58,9 @@ class App extends React.Component {
                     <CustomerHeader/>
                     <CustomerSlider/>
                     <CustomerHomepage />
+                </Route>
+                <Route exact path = "/" >
+                    <Redirect to="/customer/login"/>
                 </Route>
                 <Route exact path = "/customer/register">
                     <CustomerRegistration />
