@@ -6,7 +6,12 @@ import Logo from "../assets/res/logo/logo.png";
 import axios from 'axios';
 
 const StoreHeader = () => {
-    
+    let history = useHistory()
+    const [product_name, setProductName] = useState('');
+    const handleSuccessfulAuth = () => {
+        history.push("/store/search");
+        localStorage.setItem("store_search_product_name",product_name)
+    } 
 
     return (
         <div classNameName="container">
@@ -21,8 +26,15 @@ const StoreHeader = () => {
                         </div>
 
                         <form className="header_desktop_store_1__search d-flex">
-                            <input className="header_search_form form-control me-2" type="search" placeholder="Nhập tên sản phẩm" aria-label="Search"/>
-                            <button type="submit" className="btn btn-dark">Tìm kiếm</button>
+                            <input 
+                                className="header_search_form form-control me-2" 
+                                type="search" 
+                                placeholder="Nhập tên sản phẩm" aria-label="Search"
+                                value={product_name}
+                                onChange={(e)=> setProductName(e.target.value)}
+                                required
+                            />
+                            <button onClick={()=>handleSuccessfulAuth()} type="submit" className="btn btn-dark">Tìm kiếm</button>
                         </form>
 
                         <div className="header_desktop_store_1__account">

@@ -8,6 +8,7 @@ const StoreQLDH = () => {
     const [OrderList, setOrderList] = useState([{"total_amount":{},"commission":{},"list_order":[]}]);
     const [gt_date, setgtdate] = useState("");
     const [lt_date, setltdate] = useState("");
+    let history = useHistory()
 
     const fetchOrderList = async () =>{
         try {
@@ -29,6 +30,11 @@ const StoreQLDH = () => {
         } catch (error) {
             console.log('Failed to fetch store list', error)
         }
+    }
+
+    function setOrderID(id){
+        localStorage.setItem("store_order_id",id)
+        history.push("/store/qldh/ctddh")
     }
 
     return (
@@ -88,7 +94,7 @@ const StoreQLDH = () => {
                         {storelist.list_order.map(listorder => {
                             return(
                                 <div className="row align-items-start store_qldh_booking_history_info store_qldh_booking_history_info-items">
-                                    <Link to="/store/qldh/ctddh" className="store_qldh_booking_history-item_id_order col-2 store_qldh_booking_history-item">
+                                    <Link onClick={()=>setOrderID(listorder.id)} className="store_qldh_booking_history-item_id_order col-2 store_qldh_booking_history-item">
                                         {listorder.id.substring(0,10).toUpperCase()}
                                     </Link>
                                     <div className="col-2 store_qldh_booking_history-item">

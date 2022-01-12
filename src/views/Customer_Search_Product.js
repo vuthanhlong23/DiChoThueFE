@@ -8,7 +8,7 @@ import axios from 'axios';
 const CustomerSearchProduct = () => {
     const [SearchProductList, setSearchProductList] = useState([{"store_name":'', "store_address":'',"product": []}]);
     useEffect(() => {
-        const fetchSearchProductList = async (product_name) =>{
+        const fetchSearchProductList = async () =>{
           try {
               const res = await axios.get(`https://market-0123.herokuapp.com/product/find/?name=${localStorage.getItem("product_name")}`) 
                                       .then(res => {
