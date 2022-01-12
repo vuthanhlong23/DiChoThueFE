@@ -5,8 +5,7 @@ import axios from 'axios'
 
 const StoreTTCTSP = () => {
     const [productdetail, setProductDetail] = useState([{"product":{}}]);
-
-        
+    const [name, setProductName] = useState()
     useEffect(() => {
         const fetchProductDetail = async () =>{
             try {
@@ -22,6 +21,7 @@ const StoreTTCTSP = () => {
         }
         fetchProductDetail();
     }, [])
+    
 
     return (
         <div className="container">
@@ -71,37 +71,49 @@ const StoreTTCTSP = () => {
                     <div className="row">
                         <h1 className="store_qlsp2_add_product">Cập nhật sản phẩm</h1>
                     </div>
-                    <div className="input-group mb-3">
-                        <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập tên sản phẩm</span>
-                        <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-                    </div>
-                    <div className="input-group mb-3">
-                        <label className="store_qlsp_add_product_details input-group-text" for="inputGroupSelect01">Chọn loại mặt hàng</label>
-                        <select className="store_qlsp_add_product_details form-select" id="inputGroupSelect01">
-                            <option selected>Chọn...</option>
-                            <option value="1">Rau,củ, quả</option>
-                            <option value="2">Đồ tươi sống</option>
-                            <option value="3">Gia vị, phụ gia</option>
-                            <option value="4">Sản phẩm ăn liền</option>
-                        </select>
-                    </div>
-                    <div className="input-group mb-3">
-                        <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập giá sản phẩm</span>
-                        <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-                    </div>
-                    <div className="input-group mb-3">
-                        <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập xuất xứ</span>
-                        <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-                    </div>
-                    <div className="input-group mb-3">
-                        <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập xuất xứ</span>
-                        <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-                    </div>
-                    <div className="input-group mb-3">
-                        <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập link hình ảnh</span>
-                        <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-                    </div>
-                    <button type="button" className="store_qlsp_add_button_details btn btn-outline-secondary">Cập nhật sản phẩm</button>
+                    {productdetail.map(product => {
+                    return(
+                        <>
+                            <div className="input-group mb-3">
+                                <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập tên sản phẩm</span>
+                                <input 
+                                    type="text" 
+                                    className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                                    value={name}
+                                    onChange={(e)=> setProductName(e.target.value)}
+                                    required 
+                                />
+                            </div>
+                            <div className="input-group mb-3">
+                                <label className="store_qlsp_add_product_details input-group-text" for="inputGroupSelect01">Chọn loại mặt hàng</label>
+                                <select className="store_qlsp_add_product_details form-select" id="inputGroupSelect01">
+                                    <option selected>Chọn...</option>
+                                    <option value="1">Rau,củ, quả</option>
+                                    <option value="2">Đồ tươi sống</option>
+                                    <option value="3">Gia vị, phụ gia</option>
+                                    <option value="4">Sản phẩm ăn liền</option>
+                                </select>
+                            </div>
+                            <div className="input-group mb-3">
+                                <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập giá sản phẩm</span>
+                                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                            </div>
+                            <div className="input-group mb-3">
+                                <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập xuất xứ</span>
+                                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                            </div>
+                            <div className="input-group mb-3">
+                                <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập xuất xứ</span>
+                                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                            </div>
+                            <div className="input-group mb-3">
+                                <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập link hình ảnh</span>
+                                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
+                            </div>
+                            <button type="button" className="store_qlsp_add_button_details btn btn-outline-secondary">Cập nhật sản phẩm</button>
+                        </>
+                     )
+                })}
                 
                 </div>
                 

@@ -46,11 +46,7 @@ const StoreQLSP = () => {
 
     const DeleteProduct = async (product_id) =>{
         try {
-            const res = await axios(`https://market-0123.herokuapp.com/admin/delete_product/${product_id}`,
-            {
-                method: "put"
-            }
-            ) 
+            const res = await axios.delete(`http://dichothuecsharp.somee.com/api/store/product/delete/${product_id}`) 
             .then(res => {
                 console.log(res.data)
                 window.location.reload()
