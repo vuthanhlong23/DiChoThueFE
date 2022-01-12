@@ -41,6 +41,9 @@ import StoreCTDDH from './views/Store_CTDDH';
 import StoreSearchFood from './views/Store_Search_Food';
 import StoreTTHH from './views/Store_TTHH';
 import CustomerProductDetails from './views/Customer_Product_Details';
+import StoreQLSP from './views/Store_QLSP';
+import StoreTTCTSP from './views/Store_QLSP_TTCTSP';
+import StoreProfile from './views/Store_Profile';
 
 // Chữ cái đầu phải viết hoa mới được
 class App extends React.Component {
@@ -194,6 +197,18 @@ class App extends React.Component {
                 <Route exact path = "/store/tthh">
                     <StoreHeader/>
                     <StoreTTHH/>
+                </Route>
+                <Route exact path = "/store/qlsp">
+                    <StoreHeader/>
+                    <StoreQLSP/>
+                </Route>
+                <Route exact path = "/store/qlsp/ttctsp">
+                    <StoreHeader/>
+                    <StoreTTCTSP/>
+                </Route>
+                <Route exact path = "/store/profile">
+                    <StoreHeader/>
+                    <StoreProfile/>
                 </Route>
             </Switch>   
           </Router>

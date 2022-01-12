@@ -129,7 +129,7 @@ const StoreLogin = () => {
 
                             <div className="auth-form_controls">
                                 <Link to="/store" className="btn btn--normal auth-form_controls-back">Trở lại</Link>
-                                <button type="submit" className="btn btn--primary">Đăng nhập</button>
+                                <button onClick={localStorage.setItem("current_Store",user.id)} type="submit" className="btn btn--primary">Đăng nhập</button>
                             </div>
 
                         <div className="auth-form__aside">
