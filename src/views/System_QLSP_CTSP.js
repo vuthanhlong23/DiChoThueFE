@@ -41,11 +41,11 @@ const SystemCTSP = () => {
                                     <div className="product-details__contact-section">
                                         <div className="product-details__contact-info">
                                             <span className="product-details__productinfo-heading">Mã sản phẩm:</span>
-                                            <span className="product-details__productinfo">{stores.id.substring(0,10).toUpperCase()}</span>
+                                            <span className="product-details__productinfo">{String(stores.id.substring(0,10).toUpperCase())}</span>
                                         </div>
                                         <div className="product-details__contact-info">
                                             <span className="product-details__productinfo-heading">Mã cửa hàng:</span>
-                                            <span className="product-details__productinfo">{stores.store_id.substring(0,10).toUpperCase()}</span>
+                                            <span className="product-details__productinfo">{String(stores.store_id.substring(0,10).toUpperCase())}</span>
                                         </div>
                                         <div className="product-details__contact-info">
                                             <span className="product-details__productinfo-heading">Loại mặt hàng:</span>

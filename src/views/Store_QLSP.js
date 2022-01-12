@@ -12,6 +12,7 @@ const StoreQLSP = () => {
     const [origin, setOrigin] = useState('');
     const [url_image, setImage] = useState('');
     const [type_id, setTypeID] = useState('');
+    let history = useHistory()
         
     useEffect(() => {
         const fetchStoreProductList = async () =>{
@@ -86,6 +87,11 @@ const StoreQLSP = () => {
             }
         }
 
+    function setProductID(id){
+        localStorage.setItem("store_product_ctsp",id)
+        history.push("/store/qlsp/ttctsp")
+    }
+
     return (
         <div className="container">
             <div className="grid">
@@ -112,7 +118,7 @@ const StoreQLSP = () => {
                                             <h4 className="store_qlsp_dichothue-item__name">{product.name}</h4>
                                             <span className="store_qlsp_dichothue-item__price">{product.price}đ/{product.unit}</span>
                                             <button onClick={(e) => DeleteProduct(product.id)} type="button" className="btn btn-outline-secondary store_qlsp_addcart_btn">Xóa</button>
-                                            <button type="button" className="btn btn-outline-secondary store_qlsp_addcart_btn">Thông tin SP</button>
+                                            <button onClick={()=>setProductID(product.id)} type="button" className="btn btn-outline-secondary store_qlsp_addcart_btn">Thông tin SP</button>
                                         </div>
                                     </div>
                                 )})}
