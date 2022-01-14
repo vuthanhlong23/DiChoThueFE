@@ -13,7 +13,6 @@ const CustomerSearchProduct = () => {
               const res = await axios.get(`https://market-0123.herokuapp.com/product/find/?name=${localStorage.getItem("product_name")}`) 
                                       .then(res => {
                                           setSearchProductList(res.data)    
-                                          localStorage.removeItem("product_name")
                                           console.log(res.data)
                                       })
                                       .catch(err => console.log(err));
