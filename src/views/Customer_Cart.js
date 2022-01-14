@@ -75,7 +75,7 @@ const CustomerCart = () => {
             ) 
             .then(res => {
                 console.log(res.data)
-                //window.location.reload()
+                window.location.reload()
             })
             .catch(err => console.log(err));
         } catch (error) {
@@ -133,7 +133,6 @@ const CustomerCart = () => {
                                 <div className="col-4">
                                     <div className="cart-body-item">
                                         <img className="cart-body-item__service-img" src={product.url_image} alt=""/>
-                                        {/* <div className="cart-body-item__service-img" style = {{backgroundImage: `url(${Image})`}} /> */}
                                         <div className="cart-body-item__content">
                                             <span className="cart-body-item__service-name">{product.name}</span>
                                             <div className="cart-body-item__service-details">
@@ -156,7 +155,7 @@ const CustomerCart = () => {
                                             max="5"
                                             placeholder={product.amount}
                                             value={amount}
-                                            onChange={(e)=> {UpdateCart(product);setAmount(e.target.value)}}
+                                            onChange={(e)=> setAmount(e.target.value)}
                                             required
                                         />
                                     </div>
@@ -169,6 +168,7 @@ const CustomerCart = () => {
                                 </div>
                                 <div className="col-1">
                                     <div className="cart-body-item__remove"><i onClick={()=> DeleteCart(product)} className="cart-body-item__remove-icon far fa-trash-alt"></i></div>
+                                    <button onClick={()=>UpdateCart(product)} type="button">Cập nhật</button>
                                 </div>
                                 <script>
                                     {TotalAmount(product.price*product.amount)}

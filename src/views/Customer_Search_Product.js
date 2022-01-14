@@ -6,6 +6,7 @@ import axios from 'axios';
 
 
 const CustomerSearchProduct = () => {
+    let history = useHistory()
     const [SearchProductList, setSearchProductList] = useState([{"store_name":'', "store_address":'',"product": []}]);
     useEffect(() => {
         const fetchSearchProductList = async () =>{
@@ -59,6 +60,11 @@ const CustomerSearchProduct = () => {
         }
       }
 
+    function setProductID(id){
+        localStorage.setItem("customer_product_ctsp",id)
+        history.push("/customer/productdetails")
+    }
+
     return (
         <>
             <div className="container">
@@ -86,7 +92,7 @@ const CustomerSearchProduct = () => {
                                                         className="btn btn-outline-secondary customer_addcart_btn">
                                                             Thêm vào giỏ hàng
                                                     </button>
-                                                    {/* <button type="button" className="btn btn-outline-secondary customer_addcart_btn">Thêm vào giỏ hàng</button> */}
+                                                    <button onClick={()=>setProductID(productlist.id)} type="button" className="btn btn-outline-secondary store_qlsp_addcart_btn">Thông tin SP</button>
                                                 </div>
                                             </div>
                                                     

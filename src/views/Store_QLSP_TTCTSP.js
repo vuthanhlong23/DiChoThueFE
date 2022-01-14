@@ -57,10 +57,6 @@ const StoreTTCTSP = () => {
                                         <span className="product-details__productinfo-heading">Xuất xứ:</span>
                                         <span className="store_qlsp_product-details__productinfo">{product.origin}</span>
                                     </div>
-                                    <div className="store_qlsp_product-details__contact-info product-details__contact-info-last-item">
-                                        <span className="product-details__productinfo-heading">Thông tin khác:</span>
-                                        <span className="store_qlsp_product-details__productinfo">Mặt hàng đc lấy ở abc...</span>
-                                    </div>
                                 </div>
                             </div>
                         </>
