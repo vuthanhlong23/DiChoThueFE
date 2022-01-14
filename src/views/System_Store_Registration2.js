@@ -13,7 +13,7 @@ const SystemStoreRegistration2 = () => {
     useEffect(() => {
         const fetchStoreDetail = async () =>{
             try {
-                const res = await axios.get(`https://market-0123.herokuapp.com/store/storedetail/${localStorage.getItem("System_register_store_id")}`) 
+                const res = await axios.get(`https://market-0123.herokuapp.com/admin/find/register/${localStorage.getItem("System_register_store_id")}`) 
                                         .then(res => {
                                             setStoreDetail(res.data);
                                             console.log(res.data)

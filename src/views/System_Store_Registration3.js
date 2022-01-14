@@ -107,19 +107,14 @@ const SystemStoreRegistration3 = () => {
                         />
                     </div>
                 </div>
-                {/* <form onSubmit={SystemStoreRegister}> */}
                 <div className="row col-2">
-                    {/* <form onSubmit={SystemStoreRegister}> */}
-                        <button type="submit" className="btn btn-secondary system_registration-store-list_btn">Lưu thông tin</button>
-                    {/* </form> */}
+                    <button type="submit" className="btn btn-secondary system_registration-store-list_btn">Lưu thông tin</button>
                 </div>
                 </form>
             </div>
 
         </div>
-
     );
-
 }
 
 export default SystemStoreRegistration3;
