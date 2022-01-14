@@ -105,22 +105,22 @@ const CustomerCart = () => {
                 
 
                 <div className="row align-items-start customer_cart_info">
-                    <div className="col-4">
+                    <div className="col-3">
                         Sản phẩm
                     </div>
-                    <div className="col-2">
+                    <div className="col-1">
                         Đơn giá
                     </div>
                     <div className="col-2">
                         Số lượng
                     </div>
-                    <div className="col-1">
+                    <div className="col-2">
                         Đơn vị tính 
                     </div>
                     <div className="col-2">
                         Số tiền
                     </div>
-                    <div className="col-1">
+                    <div className="col-2">
                         Thao tác
                     </div>
                 </div>
@@ -130,7 +130,7 @@ const CustomerCart = () => {
                         {stores.products.map(product => {
                         return (
                             <div className="row align-items-start customer_cart_info">
-                                <div className="col-4">
+                                <div className="col-3">
                                     <div className="cart-body-item">
                                         <img className="cart-body-item__service-img" src={product.url_image} alt=""/>
                                         <div className="cart-body-item__content">
@@ -142,7 +142,7 @@ const CustomerCart = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="col-2">
+                                <div className="col-1">
                                     <div className="cart-body-item__service-element">{product.price}đ</div>
                                 </div>
                                 <div className="col-2">
@@ -160,13 +160,13 @@ const CustomerCart = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="col-1">
+                                <div className="col-2">
                                     <div className="cart-body-item__service-element">{product.unit}</div>
                                 </div>
                                 <div className="col-2">
                                     <div className="cart-body-item__service-element">{product.price*product.amount}đ</div>
                                 </div>
-                                <div className="col-1">
+                                <div className="col-2 cart-body-item-activity">
                                     <div className="cart-body-item__remove"><i onClick={()=> DeleteCart(product)} className="cart-body-item__remove-icon far fa-trash-alt"></i></div>
                                     <button onClick={()=>UpdateCart(product)} type="button">Cập nhật</button>
                                 </div>

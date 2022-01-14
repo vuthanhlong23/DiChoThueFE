@@ -8,7 +8,9 @@
     color: white;
     height: 50px;
 }
-
+.cart-body-item-activity{
+    display: flex;
+}
 .cart_heading_name {
     font-size: 1.8rem;
     font-weight: 600;
