@@ -48,6 +48,11 @@ const SystemTKDDH = () => {
         }
     }
 
+    function setOrderID(id){
+        localStorage.setItem("system_order_id",id)
+        history.push("/system/ctddh")
+    }
+
     return (
         <div className="container">
             <div className="grid">  
@@ -95,19 +100,19 @@ const SystemTKDDH = () => {
                 </div>
                 <button onClick={(e)=> fetchOrderList()} type="submit" className="btn btn-secondary system-tkddh_submit_btn">Lập danh sách</button>
                 
-                <div class="row system_tkddh-store-list-title">
-                    <div class="col-4">
-                        <span class="system_tkddh-store-list-item">
+                <div className="row system_tkddh-store-list-title">
+                    <div className="col-4">
+                        <span className="system_tkddh-store-list-item">
                             Mã đơn hàng
                         </span>
                     </div>
-                    <div class="col-4">
-                        <span class="system_tkddh-store-list-item">
+                    <div className="col-4">
+                        <span className="system_tkddh-store-list-item">
                             Tổng tiền mặt hàng
                         </span>
                     </div>
-                    <div class="col-4">
-                        <span class="system_tkddh-store-list-item">
+                    <div className="col-4">
+                        <span className="system_tkddh-store-list-item">
                             Tổng tiền đơn hàng
                         </span>
                     </div>
@@ -118,19 +123,19 @@ const SystemTKDDH = () => {
                     <>
                         {storelist.list_order.map(listorder => {
                             return(
-                                <div class="row system_tkddh-store-list">
-                                    <div class="col-4">
-                                        <span class="system_tkddh-store-list-item">
-                                            {listorder.id.substring(1,10).toUpperCase()}
-                                        </span>
+                                <div className="row system_tkddh-store-list">
+                                    <div className="col-4">
+                                        <Link onClick={()=>setOrderID(listorder.id)} classNameName="system_tkddh-store-list-item">
+                                            {listorder.id.substring(0,10).toUpperCase()}
+                                        </Link>
                                     </div>
-                                    <div class="col-4">
-                                        <span class="system_tkddh-store-list-item">
+                                    <div className="col-4">
+                                        <span className="system_tkddh-store-list-item">
                                             {listorder.total_amount}đ
                                         </span>
                                     </div>
-                                    <div class="col-4">
-                                        <span class="system_tkddh-store-list-item">
+                                    <div className="col-4">
+                                        <span className="system_tkddh-store-list-item">
                                             {listorder.total}đ
                                         </span>
                                     </div>

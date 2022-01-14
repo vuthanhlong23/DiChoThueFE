@@ -5,6 +5,7 @@ import "../assets/stylesheets/base.css";
 import axios from 'axios'
 
 const CustomerSelectFood = () => {
+  let history = useHistory()
   const [StoreProductList, setStoreProductList] = useState([{"store":{},"products": []}]);
   
   useEffect(() => {
@@ -58,6 +59,11 @@ const CustomerSelectFood = () => {
         console.log('Failed', error)
     }
   } 
+
+  function setProductID(id){
+    localStorage.setItem("customer_product_ctsp",id)
+    history.push("/customer/productdetails")
+  }
 
   return (
       <div className="container">
@@ -134,6 +140,7 @@ const CustomerSelectFood = () => {
                                         className="btn btn-outline-secondary customer_addcart_btn">
                                             Thêm vào giỏ hàng
                                       </button>
+                                      <button onClick={()=>setProductID(product.id)} type="button" className="btn btn-outline-secondary store_qlsp_addcart_btn">Thông tin SP</button>
                                       
                                     </div>
                                 </div>   

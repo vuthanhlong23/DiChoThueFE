@@ -44,6 +44,7 @@ import CustomerProductDetails from './views/Customer_Product_Details';
 import StoreQLSP from './views/Store_QLSP';
 import StoreTTCTSP from './views/Store_QLSP_TTCTSP';
 import StoreProfile from './views/Store_Profile';
+import SystemCTDDH from './views/System_CTDDH';
 
 // Chữ cái đầu phải viết hoa mới được
 class App extends React.Component {
@@ -169,6 +170,10 @@ class App extends React.Component {
                 <Route exact path = "/system/qlchst">
                     <SystemHeader/>
                     <SystemQLTTCHST />
+                </Route>
+                <Route exact path = "/system/ctddh">
+                    <SystemHeader/>
+                    <SystemCTDDH />
                 </Route>
                 <Route exact path = "/system/qlchst/ttctchst">
                     <SystemHeader/>

@@ -48,6 +48,11 @@ const SystemTTHH = () => {
         }
     }
 
+    function setOrderID(id){
+        localStorage.setItem("system_order_id",id)
+        history.push("/system/ctddh")
+    }
+
     return (
         <div className="container">
             <div className="grid">
@@ -115,9 +120,9 @@ const SystemTTHH = () => {
                             return(
                                 <div class="row system_tkddh-store-list">
                                     <div class="col-4">
-                                        <span class="system_tkddh-store-list-item">
+                                        <Link onClick={()=>setOrderID(listorder.id)} classNameName="system_tkddh-store-list-item">
                                             {listorder.id.substring(0,10).toUpperCase()}
-                                        </span>
+                                        </Link>
                                     </div>
                                     <div class="col-4">
                                         <span class="system_tkddh-store-list-item">

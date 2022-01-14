@@ -32,6 +32,7 @@ const StoreQLDH = () => {
         }
     }
 
+
     function setOrderID(id){
         localStorage.setItem("store_order_id",id)
         history.push("/store/qldh/ctddh")
@@ -70,7 +71,7 @@ const StoreQLDH = () => {
                     />
                 </div>
             </div>
-            <button onClick={()=> fetchOrderList()} type='submit' className="btn btn-secondary system-tkddh_submit_btn">Xem Đơn Hàng</button>
+            <button onClick={()=> fetchOrderList()} type='submit' className="btn btn-secondary system-tkddh_submit_btn">Thực hiện</button>
             <div className="row align-items-start store_qldh_booking_history_info">
                 <div className="col-2">
                     Mã đơn hàng
@@ -107,7 +108,7 @@ const StoreQLDH = () => {
                                         {listorder.status}
                                     </div>
                                     <div className="col-2 store_qldh_booking_history-item">
-                                        <button type="button" className="store_qldh_booking_history-item_cancel_btn btn btn btn-secondary ">Xác nhận đơn hàng</button>
+                                        <button onClick={()=>setOrderID(listorder.id)} type="button" className="store_qldh_booking_history-item_cancel_btn btn btn btn-secondary ">Xem chi tiết đơn hàng</button>
                                     </div>
                                 </div>
                         )})}

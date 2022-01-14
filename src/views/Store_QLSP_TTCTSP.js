@@ -5,7 +5,13 @@ import axios from 'axios'
 
 const StoreTTCTSP = () => {
     const [productdetail, setProductDetail] = useState([{"product":{}}]);
-    const [name, setProductName] = useState()
+    const [ProductTypeList, setProductTypeList] = useState([{"product_type":[]}]);
+    const [product_name, setProductName] = useState('');
+    const [price, setPrice] = useState('');
+    const [unit, setUnit] = useState('');
+    const [origin, setOrigin] = useState('');
+    const [url_image, setImage] = useState('');
+    const [type_id, setTypeID] = useState('');
     useEffect(() => {
         const fetchProductDetail = async () =>{
             try {
@@ -19,9 +25,51 @@ const StoreTTCTSP = () => {
                 console.log('Failed to fetch store list', error)
             }
         }
+
+        const fetchProductTypeList = async () =>{
+            try {
+                const res = await axios.get(`http://dichothuecsharp.somee.com/api/producttype/list`) 
+                                        .then(res => {
+                                            setProductTypeList(res.data)
+                                            console.log(res.data)
+                                        })
+                                        .catch(err => console.log(err));
+                } catch (error) {
+                    console.log('Failed to fetch store list', error)
+                }
+            }
+        fetchProductTypeList()
         fetchProductDetail();
     }, [])
-    
+
+    const UpdateProduct = async () =>{
+        try {
+            const res = await axios(`http://dichothuecsharp.somee.com/api/store/product/update/${localStorage.getItem("store_product_ctsp")}`,
+            {
+                method: "patch",
+                data:{
+                    store_id: localStorage.getItem("current_Store"),
+                    type_id: type_id,
+                    product_name: product_name,
+                    price: Number(price),
+                    unit: unit,
+                    origin: origin,
+                    url_image: url_image
+                }
+            }
+            ) 
+            .then(res => {
+                console.log(res.data)
+                alert("Cập nhật sản phẩm thành công!")
+                window.location.reload()
+            })
+            .catch(err => console.log(err));
+            } catch (error) {
+                console.log('Failed to fetch store list', error)
+            }
+        }
+
+   
 
     return (
         <div className="container">
@@ -67,49 +115,77 @@ const StoreTTCTSP = () => {
                     <div className="row">
                         <h1 className="store_qlsp2_add_product">Cập nhật sản phẩm</h1>
                     </div>
-                    {productdetail.map(product => {
-                    return(
-                        <>
-                            <div className="input-group mb-3">
-                                <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập tên sản phẩm</span>
-                                <input 
-                                    type="text" 
-                                    className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
-                                    value={name}
-                                    onChange={(e)=> setProductName(e.target.value)}
-                                    required 
-                                />
-                            </div>
-                            <div className="input-group mb-3">
-                                <label className="store_qlsp_add_product_details input-group-text" for="inputGroupSelect01">Chọn loại mặt hàng</label>
-                                <select className="store_qlsp_add_product_details form-select" id="inputGroupSelect01">
-                                    <option selected>Chọn...</option>
-                                    <option value="1">Rau,củ, quả</option>
-                                    <option value="2">Đồ tươi sống</option>
-                                    <option value="3">Gia vị, phụ gia</option>
-                                    <option value="4">Sản phẩm ăn liền</option>
-                                </select>
-                            </div>
-                            <div className="input-group mb-3">
-                                <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập giá sản phẩm</span>
-                                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-                            </div>
-                            <div className="input-group mb-3">
-                                <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập xuất xứ</span>
-                                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-                            </div>
-                            <div className="input-group mb-3">
-                                <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập xuất xứ</span>
-                                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-                            </div>
-                            <div className="input-group mb-3">
-                                <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập link hình ảnh</span>
-                                <input type="text" className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"/>
-                            </div>
-                            <button type="button" className="store_qlsp_add_button_details btn btn-outline-secondary">Cập nhật sản phẩm</button>
-                        </>
-                     )
-                })}
+                    
+                        <div className="input-group mb-3">
+                            <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập tên sản phẩm</span>
+                            <input 
+                                type="text" 
+                                className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                                value={product_name}
+                                onChange={(e)=> setProductName(e.target.value)}
+                                required 
+                            />
+                        </div>
+                        <div className="input-group mb-3">
+                            <label className="store_qlsp_add_product_details input-group-text" for="inputGroupSelect01">Chọn loại mặt hàng</label>
+                            <select 
+                                className="store_qlsp_add_product_details form-select" 
+                                id="inputGroupSelect01"
+                                value={type_id}
+                                onChange={(e)=> setTypeID(e.target.value)}
+                                required   
+                            >
+                            <option selected>Chọn...</option>
+                            {ProductTypeList.map(product_type=>{
+                                return(
+                                    <option value={product_type.id}>{product_type.name}</option>
+                                )
+                                
+                            })}
+                            
+                            </select>
+                        </div>
+                        <div className="input-group mb-3">
+                            <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập giá sản phẩm</span>
+                            <input 
+                                type="text" 
+                                className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                                value={price}
+                                onChange={(e)=> setPrice(e.target.value)}
+                                required  
+                            />
+                        </div>
+                        <div className="input-group mb-3">
+                            <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập xuất xứ</span>
+                            <input 
+                                type="text" 
+                                className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                                value={origin}
+                                onChange={(e)=> setOrigin(e.target.value)}
+                                required  
+                            />
+                        </div>
+                        <div className="input-group mb-3">
+                            <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập đơn vị</span>
+                            <input 
+                                type="text" 
+                                className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                                value={unit}
+                                onChange={(e)=> setUnit(e.target.value)}
+                                required  
+                            />
+                        </div>
+                        <div className="input-group mb-3">
+                            <span className="store_qlsp_add_product_details input-group-text" id="inputGroup-sizing-default">Nhập link hình ảnh</span>
+                            <input 
+                                type="text" 
+                                className="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"
+                                value={url_image}
+                                onChange={(e)=> setImage(e.target.value)}
+                                required      
+                            />
+                        </div>
+                        <button onClick={()=>UpdateProduct()} type="button" className="store_qlsp_add_button_details btn btn-outline-secondary">Cập nhật sản phẩm</button>
                 
                 </div>
                 

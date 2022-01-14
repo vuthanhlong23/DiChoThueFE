@@ -3,14 +3,14 @@ import {Link, useHistory} from 'react-router-dom';
 import "../assets/stylesheets/store_qldh.css";
 import axios from 'axios';
 
-const StoreCTDDH = () => {
+const SystemCTDDH = () => {
     const [OrderDetail, setOrderDetail] = useState([{"order":{},"item":[]}]);
     let history = useHistory()
 
     useEffect(() => {
         const fetchOrderDetail = async () =>{
             try {
-                const res = await axios(`http://dichothuecsharp.somee.com/api/order/info/${localStorage.getItem("store_order_id")}`,
+                const res = await axios(`http://dichothuecsharp.somee.com/api/order/info/${localStorage.getItem("system_order_id")}`,
                 {
                     method: 'get'
                 }) 
@@ -27,35 +27,6 @@ const StoreCTDDH = () => {
         fetchOrderDetail();
     }, [])
 
-    const ConfirmOrder = async () =>{
-        try {
-            const res = await axios(`http://dichothuecsharp.somee.com/api/store/order/confirm/${localStorage.getItem("store_order_id")}`,
-            {
-                method: 'patch'
-            }) 
-            .then(res => {
-                alert("Xác nhận đơn hàng thành công")
-            })
-            .catch(err => console.log(err));
-        } catch (error) {
-            console.log('Failed to fetch store list', error)
-        }
-    }
-
-    const RefuseOrder = async () =>{
-        try {
-            const res = await axios(`http://dichothuecsharp.somee.com/api/store/order/refuse/${localStorage.getItem("store_order_id")}`,
-            {
-                method: 'patch'
-            }) 
-            .then(res => {
-                alert("Từ chối đơn hàng thành công")
-            })
-            .catch(err => console.log(err));
-        } catch (error) {
-            console.log('Failed to fetch store list', error)
-        }
-    }
 
     return (
         <div className="container">
@@ -134,16 +105,10 @@ const StoreCTDDH = () => {
                             </div>
                     )})}
                     </div>
-                    <div className="col-8">
-                        <div className="store_qldh_two_button_wrap">
-                            <button onClick={()=>ConfirmOrder()} type="button" className="btn btn-secondary store_qldh_confirm_btn">Xác nhận</button>
-                            <button onClick={()=>RefuseOrder()} type="button" className="btn btn-secondary  store_qldh_cancel_btn">Từ chối đơn hàng</button>  
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     );
 }
 
-export default StoreCTDDH;
+export default SystemCTDDH;

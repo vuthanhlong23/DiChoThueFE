@@ -11,12 +11,20 @@ const StoreSearchFood = () => {
     useEffect(() => {
         const fetchSearchProductList = async () =>{
           try {
-              const res = await axios.get(`https://market-0123.herokuapp.com/product/find/?name=${localStorage.getItem("store_search_product_name")}`) 
-                                      .then(res => {
-                                          setSearchProductList(res.data)    
-                                          console.log(res.data)
-                                      })
-                                      .catch(err => console.log(err));
+              const res = await axios(`https://market-0123.herokuapp.com/store/find`,
+                {method: 'post',
+                data:{
+                    store_id: localStorage.getItem("current_Store"),
+                    product_name: localStorage.getItem("store_search_product_name")
+                }}  
+              ) 
+                .then(Response => {
+                    setSearchProductList(Response.data)    
+                    console.log(Response.data)
+                })
+                .catch(err =>
+                    {if(err.status!=404) alert("Không tìm thấy sản phẩm nào")}
+                );
           } catch (error) {
               console.log('Failed to fetch store list', error)
           }

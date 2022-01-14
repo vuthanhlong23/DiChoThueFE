@@ -4,7 +4,7 @@ import "../assets/stylesheets/system_tkddh.css";
 import "../assets/stylesheets/system_qlsp.css"
 import axios from 'axios';
 import { PieChart, Pie, Tooltip,Cell } from 'recharts';
-
+const COLORS = ['#D21404', '#02C04A', '#DD571C', '#FFBA00'];
 const SystemTKVD = () => {
     const [regionList, setRegionList] = useState([{'region':[]}]);
     const [type_id, setTypeID] = useState('');
@@ -68,9 +68,10 @@ const SystemTKVD = () => {
                         name="Vùng"
 
                     >
-                    
+                    {regionList.map((entry, index) => (
+                        <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
+                    ))}
                     </Pie>
-                <Tooltip/>
                 </PieChart>
             </div>
             </div>
